@@ -1,0 +1,56 @@
+/* Navbar base */
+.custom-navbar {
+  padding: 12px 0;
+  background-color: #fff;
+}
+
+/* Logo */
+.logo-text {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.logo-text:hover {
+  color: #198754;
+}
+
+/* Nav links */
+.nav-links .nav-link {
+  font-weight: 500;
+  margin: 0 12px;
+  color: #000;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active {
+  color: #198754;
+}
+
+/* Cart */
+.cart-box {
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-count {
+  background-color: #198754;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  margin-left: 4px;
+}
+.cart-box i {
+  font-size: 1.3rem;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}

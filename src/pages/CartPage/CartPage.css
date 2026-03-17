@@ -1,0 +1,139 @@
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* 🆕 Cart item enter animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 16px;
+
+  /* 🆕 Animation when item is added */
+  animation: slideIn 0.4s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* 🆕 Hover lift effect */
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* 🔥 IMAGE SIZE FIX */
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* 🆕 Image zoom on hover */
+.cart-item:hover .cart-item-img {
+  transform: scale(1.05);
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🆕 Button animation */
+.cart-qty button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #198754;
+  background: white;
+  color: #198754;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.cart-qty button:hover {
+  background: #198754;
+  color: #fff;
+}
+
+.cart-qty button:active {
+  transform: scale(0.9);
+}
+
+/* 🆕 Remove button pulse */
+.remove-btn {
+  border: 1px solid #dc3545;
+  background: white;
+  color: #dc3545;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.remove-btn:active {
+  transform: scale(0.95);
+}
+
+/* 🆕 Cart summary fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-summary {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  height: fit-content;
+  background: #fff;
+
+  animation: fadeIn 0.5s ease;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 18px;
+}

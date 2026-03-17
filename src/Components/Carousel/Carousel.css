@@ -1,0 +1,8 @@
+
+.carousel-item img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #000;
+  
+}
