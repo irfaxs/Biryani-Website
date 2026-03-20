@@ -7,10 +7,10 @@ import Contact from "../pages/ContactPage/Contact";
 import CartPage from "../pages/CartPage/CartPage";
 import OrderSuccess from "../pages/OrderSuccess";
 import Checkout from "../pages/CartPage/Checkout";
-import Login from "../pages/login/LoginPage";
+import Login from "../pages/Login/LoginPage";
 import Register from "../pages/Register/RegisterPage";
 import ProtectedRoute from "../Components/ProtectedRoute/ProtectedRoute";
-import MyOrders from "../pages/My Orders/MyOrders";
+import MyOrders from "../pages/MyOrders/MyOrders";
 
 
 
