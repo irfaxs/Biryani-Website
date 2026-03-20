@@ -1,0 +1,99 @@
+/* 🌟 Page background */
+.checkout-page {
+  background: linear-gradient(135deg, #fff5ec, #f8f9fa);
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🧾 Card container */
+.checkout-container {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease;
+}
+
+/* ✨ Title */
+.checkout-title {
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* 📌 Section headings */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* 🧾 Inputs */
+.checkout-input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.checkout-input:focus {
+  border-color: #ff7a18;
+  box-shadow: 0 0 8px rgba(255, 122, 24, 0.25);
+}
+
+/* 💳 Payment box */
+.payment-box {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.payment-box:hover {
+  border-color: #ff7a18;
+  background: #fff9f4;
+}
+
+/* 💳 Radio */
+.form-check-input:checked {
+  background-color: #ff7a18;
+  border-color: #ff7a18;
+}
+
+/* 🚀 Button */
+.place-order-btn {
+  background: linear-gradient(135deg, #ff7a18, #ff9f43);
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 122, 24, 0.3);
+}
+
+.place-order-btn:active {
+  transform: scale(0.96);
+}
+
+/* ✨ Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

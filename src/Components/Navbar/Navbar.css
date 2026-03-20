@@ -46,7 +46,33 @@
 .cart-box i {
   font-size: 1.3rem;
 }
+.orders-btn {
+  white-space: nowrap;   /* prevents text breaking */
+  font-weight: 500;
+}
+.user-name {
+  font-weight: 500;
+  white-space: nowrap;
+}
 
+
+
+
+.search-btn {
+  display: none;  /* hide button */
+}
+
+.search-box {
+  flex: 0 0 auto;      /* ❗ prevents full expansion */
+  width: 200px;        /* ❗ fixed width */
+}
+
+.search-input {
+  height: 35px;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 5px 12px;
+}
 
 /* Mobile */
 @media (max-width: 768px) {

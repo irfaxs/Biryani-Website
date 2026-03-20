@@ -1,0 +1,62 @@
+/* Page background */
+.order-page {
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* Card container */
+.order-container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Order items */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+/* Left side */
+.order-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-left img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Price */
+.order-price {
+  font-weight: 500;
+}
+
+/* Button */
+.back-home-btn {
+  display: inline-block;
+  background: #ff7a18;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.back-home-btn:hover {
+  background: #e66a0f;
+}
